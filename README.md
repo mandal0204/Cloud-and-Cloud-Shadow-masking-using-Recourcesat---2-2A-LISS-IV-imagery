@@ -1,0 +1,1 @@
+# Cloud-and-Cloud-Shadow-masking-using-Recourcesat---2-2A-LISS-IV-imagery
