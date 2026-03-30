@@ -1,0 +1,39 @@
+name: myenv  # Change this to your preferred environment name
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.9.23
+  - numpy=1.24.3
+  - pillow=11.2.1
+  - scikit-learn=1.6.1
+  - scikit-image=0.24.0
+  - matplotlib=3.9.4
+  - h5py=3.14.0
+  - pandas=2.3.0
+  - xarray=2024.7.0
+  - gdal=3.6.2
+  - fiona=1.9.1
+  - shapely=2.0.7
+  - rasterio=1.4.3
+  - rioxarray=0.15.0
+  - geopandas=1.0.1
+  - opencv=4.11.0.86
+  - imagecodecs=2024.12.30
+  - tifffile=2024.8.30
+  - openpyxl=3.1.5
+  - jupyterlab=4.4.3
+  - tqdm=4.67.1
+  - ephem=4.2
+  - pytz=2025.2
+
+  # PyTorch is tricky — Conda Forge may not always have the exact latest version
+  - pytorch=2.5.1
+  - torchvision  # Optional, in case you need it for image tasks
+
+  # Fallback to pip for any packages not available via conda
+  - pip:
+      # Uncomment only if conda fails to install PyTorch
+      # - torch==2.5.1
+
